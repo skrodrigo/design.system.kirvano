@@ -1,0 +1,8 @@
+@use './functions' as fn;
+@use './variables' as var;
+
+@mixin title-1 {
+    color: var.$text-prima;
+    font-size: fn.toRem(52px);
+    font-weight: 900;
+}
