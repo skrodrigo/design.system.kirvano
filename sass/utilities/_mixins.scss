@@ -1,8 +1,15 @@
 @use './functions' as fn;
 @use './variables' as var;
 
-@mixin title-1 {
-    color: var.$text-prima;
-    font-size: fn.toRem(52px);
-    font-weight: 900;
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
