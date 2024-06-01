@@ -16,71 +16,71 @@
 }
 
 .title-2-white{
-    font-size: fn.toRem(52);
+    font-size: fn.toRem(32);
     font-weight: 900;
     color: var.$text-white;
     text-align: center;
 }
 
 .title-2-black{
-    font-size: fn.toRem(52);
+    font-size: fn.toRem(32);
     font-weight: 900;
     color: var.$text-prima;
     text-align: center;
 }
 
 .title-3-white{
-    font-size: fn.toRem(52);
-    font-weight: 900;
+    font-size: fn.toRem(24);
+    font-weight: 700;
     color: var.$text-white;
     text-align: center;
 }
 
 .title-3-black{
-    font-size: fn.toRem(52);
-    font-weight: 900;
+    font-size: fn.toRem(24);
+    font-weight: 700;
     color: var.$text-prima;
     text-align: center;
 }
 
 .paragraph-1-white{
-    font-size: 20px;
+    font-size: fn.toRem(20);
     font-weight: 700;
     color: var.$text-white;
     text-align: center;
 }
 
 .paragraph-1-black{
-    font-size: 20px;
+    font-size: fn.toRem(20);
     font-weight: 700;
     color: var.$text-prima;
     text-align: center;
 }
 
 .paragraph-2-white{
-    font-size: 20px;
+    font-size: fn.toRem(16);
     font-weight: 700;
     color: var.$text-white;
     text-align: center;
 }
 
 .paragraph-2-black{
-    font-size: 20px;
+    font-size: fn.toRem(16);
     font-weight: 700;
     color: var.$text-prima;
     text-align: center;
 }
 
 .paragraph-3-white{
-    font-size: 20px;
-    font-weight: 700;
+    font-size: fn.toRem(16);
+    font-weight: 500;
     color: var.$text-white;
     text-align: center;
 }
 
 .paragraph-3-black{
-    font-size: 20px;
-    font-weight: 700;
+    font-size: fn.toRem(16);
+    font-weight: 500;
     color: var.$text-prima;
     text-align: center;
 }
