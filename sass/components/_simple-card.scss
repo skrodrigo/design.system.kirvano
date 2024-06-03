@@ -1,0 +1,10 @@
+@use '../utilities/mixins' as mx; 
+@use '../utilities/variables' as var ;
+@use '../utilities/functions' as fn;
+
+.simple-card {
+    @include mx.flex;
+    background-color: transparent;
+    color: var.$text-prima;
+    gap: fn.toRem(24)
+}

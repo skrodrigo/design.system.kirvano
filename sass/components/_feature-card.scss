@@ -1,0 +1,13 @@
+@use '../utilities/mixins' as mx; 
+@use '../utilities/variables' as var ;
+@use '../utilities/functions' as fn;
+
+.feature-card {
+    border: 1px solid var.$text-terce;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    margin: auto;
+    @include mx.grid-col-2;
+}
