@@ -1,0 +1,13 @@
+@use '../utilities/mixins' as mx; 
+@use '../utilities/variables' as var ;
+@use '../utilities/functions' as fn;
+
+.card-title {
+    @include mx.flex-col;
+    max-width: fn.toRem(1216);
+    margin: 0 auto;
+}
+
+
+
+

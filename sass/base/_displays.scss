@@ -1,29 +1,25 @@
-@use './functions' as fn;
-@use './variables' as var;
-
-@mixin flex {
+.flex {
     display: flex;
     justify-items: center;
     justify-content: center;
     align-items: center;
 }
 
-@mixin flex-col {
+.flex-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-@mixin flex-start {
+.flex-start {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-@mixin flex-end {
+.flex-end {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
-

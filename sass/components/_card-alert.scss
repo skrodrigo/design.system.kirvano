@@ -1,0 +1,21 @@
+@use '../utilities/mixins' as mx; 
+@use '../utilities/variables' as var ;
+@use '../utilities/functions' as fn;
+
+.card-alert {
+    @include mx.flex-col;
+    max-width: fn.toRem(1216);
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.border-card-alert {
+    border: 1px solid var.$text-terce;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+}
+
+.gap-card-alert {
+    gap: 20px;
+}

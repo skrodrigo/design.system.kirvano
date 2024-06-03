@@ -1,6 +1,13 @@
 @use './utilities/global.scss';
-@use './utilities/mixins' as mx; 
-@use './utilities/variables' as var;
-@use './utilities/functions' as fn;
+
+@use './utilities/mixins' ; 
+@use './utilities/variables' ;
+@use './utilities/functions';
+
 @use './base/texts.scss';
+
+@use './components/card-title.scss';
+@use './components/card-alert.scss';
+
+@use './base/displays';
 
