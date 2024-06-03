@@ -5,7 +5,7 @@
 .card-alert {
     @include mx.flex-col;
     max-width: fn.toRem(1216);
-    gap: 50px;
+    gap: 30px;
     margin: 0 auto;
 }
 
