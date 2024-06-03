@@ -1,0 +1,63 @@
+@use '../utilities/mixins' as mx; 
+@use '../utilities/variables' as var ;
+@use '../utilities/functions' as fn;
+
+.button-small {
+    @include mx.flex;
+    border-radius: fn.toRem(10);
+    padding: 9px 44px;
+    font-size: fn.toRem(14);
+    font-weight: 700;
+    color: var.$text-white;
+    background-color: var.$color-blue;
+    cursor: pointer;
+    border-style: none;
+}
+
+.button-big {
+    @include mx.flex;
+    border-radius: fn.toRem(10);
+    padding: 9px 88px;
+    font-size: fn.toRem(16);
+    font-weight: 700;
+    color: var.$text-white;
+    background-color: var.$color-blue;
+    cursor: pointer;
+    border-style: none;
+}
+
+.button-large {
+    @include mx.flex;
+    border-radius: fn.toRem(10);
+    padding: 18px 88px;
+    font-size: fn.toRem(16);
+    font-weight: 700;
+    color: var.$text-white;
+    background-color: var.$color-blue;
+    cursor: pointer;
+    border-style: none;
+}
+
+.button-link-small {
+    @include mx.flex;
+    background-color: transparent;
+    border-radius: fn.toRem(10);    
+    font-size: fn.toRem(14);
+    font-weight: 700;
+    color: var.$color-blue;
+    cursor: pointer;
+    border-style: none;
+    text-decoration: underline;
+}
+
+.button-link-big {
+    @include mx.flex;
+    background-color: transparent;
+    border-radius: fn.toRem(10);
+    font-size: fn.toRem(14);
+    font-weight: 700;
+    color: var.$color-blue;
+    cursor: pointer;
+    border-style: none;
+    text-decoration: underline;
+}

@@ -5,9 +5,11 @@
 @use './utilities/functions';
 
 @use './base/texts.scss';
+@use './base/spaces.scss';
 
 @use './components/card-title.scss';
 @use './components/card-alert.scss';
+@use './components/buttons.scss';
 
 @use './base/displays';
 
