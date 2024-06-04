@@ -1,11 +1,57 @@
-.mx{
+// margin
+
+.my{
     margin: 10px 0px;
 }
 
-.mb{
-    margin: 0px 0px 14px 0px;
+.my-2{
+    margin: 20px 0px;
 }
+
+.mx{
+    margin: 0px 10px;
+}
+
+.mx-2{
+    margin: 0px 20px;
+}
+
+.mb{
+    margin: 0px 0px 10px 0px;
+}
+
+// padding
+
+.py{
+    margin: 10px 0px;
+}
+
+.py-2{
+    margin: 20px 0px;
+}
+
+.px{
+    margin: 0px 10px;
+}
+
+.px-2{
+    margin: 0px 20px;
+}
+
+.pb{
+    margin: 0px 0px 10px 0px;
+}
+
+// gap
 
 .gap{
     gap: 10px;
+}
+
+.gap-2{
+    gap: 20px;
+}
+
+.gap-3{
+    gap: 30px;
 }

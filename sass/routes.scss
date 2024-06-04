@@ -4,6 +4,7 @@
 @use './utilities/variables' ;
 @use './utilities/functions';
 
+@use './base/displays';
 @use './base/texts.scss';
 @use './base/spaces.scss';
 
@@ -12,6 +13,7 @@
 @use './components/buttons.scss';
 @use './components/simple-card.scss';
 @use './components/feature-card.scss';
-
-@use './base/displays';
-
+@use './components/top-nav.scss';
+@use './components/call-card';
+@use './components/footer';
+@use './components/plus-card';

@@ -1,0 +1,28 @@
+@use '../utilities/mixins' as mx; 
+@use '../utilities/variables' as var ;
+@use '../utilities/functions' as fn;
+
+
+.top-nav-bg{
+    background-color: var.$bg-prima;
+    @include mx.shadow;
+    position: fixed;
+    width: 100%;
+}
+.top-nav {
+    @include mx.flex-between;
+    padding: 10px 10px 10px 10px;
+    max-width: fn.toRem(1216);
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.ul-nav {
+    cursor: pointer;
+    @include mx.ul;
+    @include mx.flex;
+    gap: fn.toRem(24);
+}

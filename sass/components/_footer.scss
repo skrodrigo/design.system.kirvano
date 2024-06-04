@@ -1,0 +1,16 @@
+@use '../utilities/mixins' as mx; 
+@use '../utilities/variables' as var ;
+@use '../utilities/functions' as fn;
+
+.bg-footer{
+    background-color: var.$bg-seco;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content{
+    margin: 0 auto;
+    @include mx.grid-col-1-3;
+    max-width: fn.toRem(1216);
+}
+

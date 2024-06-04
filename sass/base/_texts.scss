@@ -48,25 +48,25 @@
     font-size: fn.toRem(20);
     font-weight: 700;
     color: var.$text-white;
-    text-align: center;
+    text-align: justify;
 }
 
 .paragraph-1-black{
     font-size: fn.toRem(20);
     font-weight: 700;
     color: var.$text-prima;
-    text-align: center;
+    text-align: justify;
 }
 
 .paragraph-2-white{
-    font-size: fn.toRem(16);
+    font-size: fn.toRem(18);
     font-weight: 700;
     color: var.$text-white;
-    text-align: center;
+    text-align: justify;
 }
 
 .paragraph-2-black{
-    font-size: fn.toRem(16);
+    font-size: fn.toRem(18);
     font-weight: 700;
     color: var.$text-prima;
     text-align: center;
@@ -83,6 +83,13 @@
     font-size: fn.toRem(16);
     font-weight: 500;
     color: var.$text-prima;
-    text-align: center;
+    text-align: justify;
+}
+
+.paragraph-3-zinc{
+    font-size: fn.toRem(16);
+    font-weight: 500;
+    color: var.$text-terce;
+    text-align: justify;
 }
 

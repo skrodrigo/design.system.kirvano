@@ -1,0 +1,25 @@
+@use '../utilities/mixins' as mx; 
+@use '../utilities/variables' as var ;
+@use '../utilities/functions' as fn;
+
+.call-card{
+    margin: 0 auto;
+    @include mx.grid-col-3;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var.$bg-seco;
+    width: 633px;
+    height: 267px;
+}
+
+.call-card-box{
+    @include mx.flex;   
+    width: 214px;
+    height: 201px;
+    background-color: var.$bg-terce;
+    border-radius: 10px;
+}
+
+.grid-col-span-2{
+    @include mx.col-2;
+}

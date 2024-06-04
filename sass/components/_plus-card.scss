@@ -1,0 +1,15 @@
+@use '../utilities/mixins' as mx; 
+@use '../utilities/variables' as var ;
+@use '../utilities/functions' as fn;
+
+.plus-card{
+    padding: 20px;
+    margin: 0 auto;
+    @include mx.flex-col;
+    border: 1px solid var.$text-terce;
+    border-radius: 10px;
+    width: 380px;
+    height: 300px;
+    text-align: justify !important;
+}
+
