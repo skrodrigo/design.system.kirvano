@@ -3,6 +3,7 @@
 @use '../utilities/functions' as fn;
 
 .plus-card{
+    gap: 10px;
     padding: 20px;
     margin: 0 auto;
     @include mx.flex-col;

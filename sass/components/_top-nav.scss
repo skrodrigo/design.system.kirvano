@@ -11,7 +11,7 @@
 }
 .top-nav {
     @include mx.flex-between;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     max-width: fn.toRem(1216);
     margin: 0 auto;
     top: 0;

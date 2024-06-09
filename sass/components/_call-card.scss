@@ -3,6 +3,8 @@
 @use '../utilities/functions' as fn;
 
 .call-card{
+    margin: 10px 0px;
+    gap: 30px;
     margin: 0 auto;
     @include mx.grid-col-3;
     border-radius: 10px;

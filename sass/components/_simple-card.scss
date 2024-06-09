@@ -3,6 +3,7 @@
 @use '../utilities/functions' as fn;
 
 .simple-card {
+    margin: 10px 0px;
     @include mx.flex;
     background-color: transparent;
     color: var.$text-prima;
