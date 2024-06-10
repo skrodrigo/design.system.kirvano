@@ -485,7 +485,7 @@ espaçados usando flexbox.
 
 Observações:
 
-Figma feito por: José Rodrigo
-Construção do Sass: José Rodrigo
-Documentação Feita por: Paulo Cesar, Gabriel Marques
-Markdown feito por: José Rodrigo
+Figma feito por: José Rodrigo <br/>
+Construção do Sass: José Rodrigo <br/>
+Documentação Feita por: Paulo Cesar, Gabriel Marques <br/>
+Markdown feito por: José Rodrigo <br/>
