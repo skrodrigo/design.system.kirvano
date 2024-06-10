@@ -4,7 +4,7 @@ José Rodrigo de Carvalho <br/>
 Edimar Gabriel Marques Mina <br/>
 Paulo Cesar Oliveira Souza <br/>
 
-Site base: <a href='https://kirvano.com'/>
+Site base: <a href="https://kirvano.com">Kirvano.com</a>
 
 O Kirvano é uma plataforma de pagamentos e soluções para negócios online. Ele
 oferece ferramentas para produtores digitais, afiliados e prestadores de serviços. 
