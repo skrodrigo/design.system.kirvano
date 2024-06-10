@@ -16,7 +16,13 @@ oferece ferramentas para produtores digitais, afiliados e prestadores de serviç
 
 ---------------------------------------------------------------------------------
 
-Construção do Micro Framework 
+Como Utilizar
+
+1. Clone o repositório ou baixe o zip do mesmo.
+2. Importe na sua IDE predileta. Exemplo: VS Code, Sublime Text.
+3. Use a documentação abaixo.
+
+Documentação do Micro Framework 
 
 - Mixins
 ```
