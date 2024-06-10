@@ -4,12 +4,15 @@ José Rodrigo de Carvalho <br/>
 Edimar Gabriel Marques Mina <br/>
 Paulo Cesar Oliveira Souza <br/>
 
-Visão Geral do Projeto Kirvano
+Site base: <a href='https://kirvano.com'/>
 
 O Kirvano é uma plataforma de pagamentos e soluções para negócios online. Ele
 oferece ferramentas para produtores digitais, afiliados e prestadores de serviços. 
 
-Por exemplo:
+
+---------------------------------------------------------------------------------
+
+Construção do Micro Framework 
 
 - Mixins
 ```
