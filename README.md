@@ -1,4 +1,4 @@
-Documentação: Kirvano
+Documentação do Projeto Micro-FrameWork em Sass
 
 José Rodrigo de Carvalho <br/>
 Edimar Gabriel Marques Mina <br/>
