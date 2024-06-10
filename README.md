@@ -1,5 +1,7 @@
 Documentação do Projeto Micro-FrameWork em Sass<br/>
+
 Equipe:<br/>
+
 José Rodrigo de Carvalho <br/>
 Edimar Gabriel Marques Mina <br/>
 Paulo Cesar Oliveira Souza <br/>
