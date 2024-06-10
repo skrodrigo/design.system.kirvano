@@ -130,7 +130,6 @@ Funções
  color: var.$text-white;
  text-align: center;
 }
-
 ```
 
 ```
@@ -149,7 +148,6 @@ Funções
  color: var.$text-white;
  text-align: center;
 }
-
 ```
 
 ```
@@ -177,7 +175,6 @@ Funções
  color: var.$text-prima;
  text-align: center;
 }
-
 ```
 
 • Títulos para importação com tamanhos e cores variados, escolha o que melhor
@@ -199,7 +196,6 @@ se encaixa no seu código!
  color: var.$text-prima;
  text-align: center;
 }
-
 ```
 
 ```
@@ -329,6 +325,7 @@ Cartões para chamada de ação
  height: 267px;
 }
 ```
+
 ```
 • Cartão para chamada de ação!
 .call-card-box{
@@ -338,7 +335,6 @@ Cartões para chamada de ação
  background-color: var.$bg-terce;
  border-radius: 10px;
 }
-
 ```
 
 ```
@@ -395,7 +391,6 @@ posicionamento centralizado dentro de seu contêiner
  bottom: 0;
  width: 100%;
 }
-
 ```
 
 ```
@@ -403,6 +398,7 @@ posicionamento centralizado dentro de seu contêiner
  margin: 0 auto;
  @include mx.grid-col-1-3;
  max-width: fn.toRem(1216);
+}
 ```
 
 • Este código cria uma seção de rodapé estilizada com um plano de fundo
@@ -462,7 +458,6 @@ elementos filho.
  right: 0;
  z-index: 1000;
 }
-
 ```
 
 ```
@@ -472,7 +467,6 @@ elementos filho.
  @include mx.flex;
  gap: fn.toRem(24);
 }
-
 ```
 • Este código cria uma barra de navegação superior fixa com fundo
 personalizado, sombra (definida pelo mixin), layout flexbox para
