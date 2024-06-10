@@ -35,7 +35,6 @@ flexível com alinhamento central tanto horizontal quanto vertical.
  justify-content: center;
  align-items: center;
 }
-
 ```
 • Descrição: Este mixin cria um contêiner flexível com direção de coluna (itens
 empilhados verticalmente) e alinhamento central.
@@ -46,7 +45,6 @@ empilhados verticalmente) e alinhamento central.
  justify-content: flex-start;
  align-items: flex-start;
 }
-
 ```
 • Descrição: Este mixin cria um contêiner flexível com alinhamento à esquerda
 (horizontal) e ao topo (vertical).
@@ -56,7 +54,6 @@ empilhados verticalmente) e alinhamento central.
  justify-content: flex-end;
  align-items: flex-end;
 }
-
 ```
 • Descrição: Este mixin cria um contêiner flexível com alinhamento à direita
 (horizontal) e à base (vertical).
@@ -71,7 +68,6 @@ $text-black: #000000;
 $text-prima: #171717;
 $text-seco: #212121;
 $text-terce: #474747;
-
 ```
 • Estas são variáveis armazenadas usadas para armazenar cores de texto!
 Variáveis de background-color para importação
@@ -82,7 +78,6 @@ $bg-seco: #212121;
 $bg-terce: #474747;
 $color-green: #1DA56C;
 $color-blue: #0D6EDE;
-
 ```
 • Variáveis usadas para armazenar cores de fundo do site!
 
@@ -93,7 +88,6 @@ Funções
  $root: 16;
  @return $tamanhoPx / $root * 1rem;
 }
-
 ```
 - Código feito para definir o tamanho do pixel padrão!
 
@@ -116,16 +110,13 @@ Funções
 @use './components/call-card';
 @use './components/footer';
 @use './components/plus-card';
-
 ```
 
 • Essas são as rotas utilizadas para chamar as variáveis em outras pastas!
 
 ```
-
 @use '../utilities/variables' as var;
 @use '../utilities/functions' as fn;
-
 ```
 
 • Forma correta para importação das variáveis
@@ -147,7 +138,6 @@ Funções
  color: var.$text-prima;
  text-align: center;
 }
-
 ```
 
 ```
@@ -161,14 +151,12 @@ Funções
 ```
 
 ```
-
 .title-2-black{
  font-size: fn.toRem(32);
  font-weight: 900;
  color: var.$text-prima;
  text-align: center;
 }
-
 ```
 
 ```
@@ -200,7 +188,6 @@ se encaixa no seu código!
  color: var.$text-white;
  text-align: center;
 }
-
 ```
 
 ```
@@ -214,36 +201,30 @@ se encaixa no seu código!
 ```
 
 ```
-
 .paragraph-2-white{
  font-size: fn.toRem(16);
  font-weight: 700;
  color: var.$text-white;
  text-align: center;
 }
-
 ```
 
 ```
-
 .paragraph-2-black{
  font-size: fn.toRem(16);
  font-weight: 700;
  color: var.$text-prima;
  text-align: center;
 }
-
 ```
 
 ```
-
 .paragraph-3-white{
  font-size: fn.toRem(16);
  font-weight: 500;
  color: var.$text-white;
  text-align: center;
 }
-
 ```
 
 ```
@@ -253,7 +234,6 @@ se encaixa no seu código!
  color: var.$text-prima;
  text-align: center;
 }
-
 ```
 
 
@@ -273,12 +253,10 @@ VARIAVEIS DOS BOTÕES
  background-color: var.$color-blue;
  cursor: pointer;
  border-style: none;
-
 ```
 • Botão pequeno para ser importado
 
 ```
-
 .button-big {
  @include mx.flex;
  border-radius: fn.toRem(10);
@@ -289,7 +267,6 @@ VARIAVEIS DOS BOTÕES
  background-color: var.$color-blue;
  cursor: pointer;
  border-style: none;
-
 ```
 • Botão grande para ser importado para o código
 
@@ -304,12 +281,10 @@ VARIAVEIS DOS BOTÕES
  background-color: var.$color-blue;
  cursor: pointer;
  border-style: none;
-
 ```
 • Botão largo para ser importado no seu código
 
 ```
-
 .button-link-small {
  @include mx.flex;
  background-color: transparent;
@@ -320,7 +295,6 @@ VARIAVEIS DOS BOTÕES
  cursor: pointer;
  border-style: none;
  text-decoration: underline;
-
 ```
 • Botão pequeno e podendo conter um link nele!
 
@@ -335,7 +309,6 @@ VARIAVEIS DOS BOTÕES
  cursor: pointer;
  border-style: none;
  text-decoration: underline;
-
 ```
 • Botão grande e podendo conter um link nele!
 
@@ -374,7 +347,6 @@ Cartões para chamada de ação
  gap: 30px;
  margin: 0 auto;
 }
-
 ```
 
 ```
@@ -409,7 +381,6 @@ Cartões para chamada de ação
  margin: auto;
  @include mx.grid-col-2;
 }
-
 ```
 
 • Este código cria um elemento de cartão estilizado com borda, cantos
@@ -430,7 +401,6 @@ posicionamento centralizado dentro de seu contêiner
  margin: 0 auto;
  @include mx.grid-col-1-3;
  max-width: fn.toRem(1216);
-
 ```
 
 • Este código cria uma seção de rodapé estilizada com um plano de fundo
