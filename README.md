@@ -479,3 +479,13 @@ personalizado, sombra (definida pelo mixin), layout flexbox para
 posicionamento dos itens, preenchimento interno, centralizada
 horizontalmente, e possivelmente com itens da lista de navegação alinhados e
 espaçados usando flexbox.
+
+
+---------------------------------------------------------------------------------
+
+Observações:
+
+Figma feito por: José Rodrigo
+Construção do Sass: José Rodrigo
+Documentação Feita por: Paulo Cesar, Gabriel Marques
+Markdown feito por: José Rodrigo
