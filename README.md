@@ -1,8 +1,8 @@
 Documentação: Kirvano
 
-José Rodrigo de Carvalho
-Edimar Gabriel Marques Mina
-Paulo Cesar Oliveira Souza
+José Rodrigo de Carvalho <br/>
+Edimar Gabriel Marques Mina <br/>
+Paulo Cesar Oliveira Souza <br/>
 
 Visão Geral do Projeto Kirvano
 
