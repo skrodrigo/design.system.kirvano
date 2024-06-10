@@ -1,85 +1,100 @@
 Documentação: Kirvano
+
 José Rodrigo de Carvalho
 Edimar Gabriel Marques Mina
 Paulo Cesar Oliveira Souza
+
 Visão Geral do Projeto Kirvano
+
 O Kirvano é uma plataforma de pagamentos e soluções para negócios online. Ele
-oferece ferramentas para produtores digitais, afiliados e prestadores de serviços. Aqui
-estão alguns pontos importantes sobre o projeto:
-• Objetivo: O objetivo principal do Kirvano é facilitar transações financeiras para
-empreendedores e profissionais que trabalham no setor de educação e serviços
-online.
-Funcionalidades Principais:
-• Criação de Infoprodutos: O Kirvano permite que os usuários criem e vendam
-infoprodutos, como cursos online, e-books e outros conteúdos digitais.
-• Gerenciamento de Afiliados: Produtores podem configurar programas de
-afiliados para promover seus produtos e recompensar afiliados por vendas
-bem-sucedidas.
-• Checkout Kirvano: Um meio de pagamento seguro e eficiente para processar
-transações financeiras.
-• Integração com Plataformas de Ensino: O Kirvano pode ser integrado a
-plataformas de ensino online para facilitar o pagamento de cursos.
-• Fundação: A Kirvano foi fundada em 2022 e tem se destacado como uma
-solução confiável para empreendedores digitais.
-• Use o gerenciador de pacotes para instalar o framework Kirvano em seu projeto.
+oferece ferramentas para produtores digitais, afiliados e prestadores de serviços. 
+
 Por exemplo:
-Mixins
+
+- Mixins
+```
   @mixin flex
   @mixin flex {
    display: flex;
    justify-content: center;
    align-items: center;
   }
+```
 • Descrição: Este mixin aplica a propriedade display: flex para criar um contêiner
 flexível com alinhamento central tanto horizontal quanto vertical.
-@mixin flex-col
+
+```
 @mixin flex-col {
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
 }
+
+```
 • Descrição: Este mixin cria um contêiner flexível com direção de coluna (itens
 empilhados verticalmente) e alinhamento central.
-@mixin flex-start
+
+```
 @mixin flex-start {
  display: flex;
  justify-content: flex-start;
  align-items: flex-start;
 }
+
+```
 • Descrição: Este mixin cria um contêiner flexível com alinhamento à esquerda
 (horizontal) e ao topo (vertical).
-@mixin flex-end
+```
 @mixin flex-end {
  display: flex;
  justify-content: flex-end;
  align-items: flex-end;
 }
+
+```
 • Descrição: Este mixin cria um contêiner flexível com alinhamento à direita
 (horizontal) e à base (vertical).
+
 Variáveis de texto para importação
-// text
+
+- text
+
+```
 $text-white: #FFFFFF;
 $text-black: #000000;
 $text-prima: #171717;
 $text-seco: #212121;
 $text-terce: #474747;
+
+```
 • Estas são variáveis armazenadas usadas para armazenar cores de texto!
 Variáveis de background-color para importação
-//bg
+
+```
 $bg-prima: #FFFFFF;
 $bg-seco: #212121;
 $bg-terce: #474747;
 $color-green: #1DA56C;
 $color-blue: #0D6EDE;
+
+```
 • Variáveis usadas para armazenar cores de fundo do site!
+
 Funções
+
+```
 @function toRem($tamanhoPx){
  $root: 16;
  @return $tamanhoPx / $root * 1rem;
 }
-• Código feito para definir o tamanho do pixel padrão!
-Rotas para importação
+
+```
+- Código feito para definir o tamanho do pixel padrão!
+
+- Rotas para importação
+
+```
 @use './utilities/global.scss';
 @use './utilities/mixins' ;
 @use './utilities/variables' ;
@@ -96,87 +111,153 @@ Rotas para importação
 @use './components/call-card';
 @use './components/footer';
 @use './components/plus-card';
+
+```
+
 • Essas são as rotas utilizadas para chamar as variáveis em outras pastas!
+
+```
+
 @use '../utilities/variables' as var;
 @use '../utilities/functions' as fn;
+
+```
+
 • Forma correta para importação das variáveis
+
+```
 .title-1-white{
  font-size: fn.toRem(52);
  font-weight: 900;
  color: var.$text-white;
  text-align: center;
 }
+
+```
+
+```
 .title-1-black{
  font-size: fn.toRem(52);
  font-weight: 900;
  color: var.$text-prima;
  text-align: center;
 }
+
+```
+
+```
 .title-2-white{
  font-size: fn.toRem(32);
  font-weight: 900;
  color: var.$text-white;
  text-align: center;
 }
+
+```
+
+```
+
 .title-2-black{
  font-size: fn.toRem(32);
  font-weight: 900;
  color: var.$text-prima;
  text-align: center;
 }
+
+```
+
+```
 .title-3-white{
  font-size: fn.toRem(24);
  font-weight: 700;
  color: var.$text-white;
  text-align: center;
 }
+```
+
+```
 .title-3-black{
  font-size: fn.toRem(24);
  font-weight: 700;
  color: var.$text-prima;
  text-align: center;
 }
+
+```
+
 • Títulos para importação com tamanhos e cores variados, escolha o que melhor
 se encaixa no seu código!
+
+```
 .paragraph-1-white{
  font-size: fn.toRem(20);
  font-weight: 700;
  color: var.$text-white;
  text-align: center;
 }
+
+```
+
+```
 .paragraph-1-black{
  font-size: fn.toRem(20);
  font-weight: 700;
  color: var.$text-prima;
  text-align: center;
 }
+
+```
+
+```
+
 .paragraph-2-white{
  font-size: fn.toRem(16);
  font-weight: 700;
  color: var.$text-white;
  text-align: center;
 }
+
+```
+
+```
+
 .paragraph-2-black{
  font-size: fn.toRem(16);
  font-weight: 700;
  color: var.$text-prima;
  text-align: center;
 }
+
+```
+
+```
+
 .paragraph-3-white{
  font-size: fn.toRem(16);
  font-weight: 500;
  color: var.$text-white;
  text-align: center;
 }
+
+```
+
+```
 .paragraph-3-black{
  font-size: fn.toRem(16);
  font-weight: 500;
  color: var.$text-prima;
  text-align: center;
 }
+
+```
+
+
 • Parágrafos com tamanho e cor variados, para se enquadrar exatamente com o
 título!
+
 VARIAVEIS DOS BOTÕES
+
+```
 .button-small {
  @include mx.flex;
  border-radius: fn.toRem(10);
@@ -187,7 +268,12 @@ VARIAVEIS DOS BOTÕES
  background-color: var.$color-blue;
  cursor: pointer;
  border-style: none;
+
+```
 • Botão pequeno para ser importado
+
+```
+
 .button-big {
  @include mx.flex;
  border-radius: fn.toRem(10);
@@ -198,7 +284,11 @@ VARIAVEIS DOS BOTÕES
  background-color: var.$color-blue;
  cursor: pointer;
  border-style: none;
+
+```
 • Botão grande para ser importado para o código
+
+```
 .button-large {
  @include mx.flex;
  border-radius: fn.toRem(10);
@@ -209,7 +299,12 @@ VARIAVEIS DOS BOTÕES
  background-color: var.$color-blue;
  cursor: pointer;
  border-style: none;
+
+```
 • Botão largo para ser importado no seu código
+
+```
+
 .button-link-small {
  @include mx.flex;
  background-color: transparent;
@@ -220,7 +315,11 @@ VARIAVEIS DOS BOTÕES
  cursor: pointer;
  border-style: none;
  text-decoration: underline;
+
+```
 • Botão pequeno e podendo conter um link nele!
+
+```
 .button-link-big {
  @include mx.flex;
  background-color: transparent;
@@ -231,8 +330,13 @@ VARIAVEIS DOS BOTÕES
  cursor: pointer;
  border-style: none;
  text-decoration: underline;
+
+```
 • Botão grande e podendo conter um link nele!
+
 Cartões para chamada de ação
+
+```
 .call-card{
  margin: 10px 0px;
  gap: 30px;
@@ -244,6 +348,8 @@ Cartões para chamada de ação
  width: 633px;
  height: 267px;
 }
+```
+```
 • Cartão para chamada de ação!
 .call-card-box{
  @include mx.flex;
@@ -252,6 +358,10 @@ Cartões para chamada de ação
  background-color: var.$bg-terce;
  border-radius: 10px;
 }
+
+```
+
+```
 • Cartão em formato box para ser importado!
 .card-alert {
  @include mx.flex-col;
@@ -259,19 +369,32 @@ Cartões para chamada de ação
  gap: 30px;
  margin: 0 auto;
 }
+
+```
+
+```
 .border-card-alert {
  border: 1px solid var.$text-terce;
  border-radius: 10px;
  width: 500px;
  padding: 10px;
 }
+```
+
+
 • Cartões de alerta, um sem borda e o outro tendo bordas e tamanhos variado
+
+```
 .card-title {
  @include mx.flex-col;
  max-width: fn.toRem(1216);
  margin: 0 auto;
 }
+
+```
 • Cartão do título, podendo ser incluído nas suas principais frases de destaque!
+
+```
 .feature-card {
  border: 1px solid var.$text-terce;
  border-radius: 10px;
@@ -281,20 +404,34 @@ Cartões para chamada de ação
  margin: auto;
  @include mx.grid-col-2;
 }
+
+```
+
 • Este código cria um elemento de cartão estilizado com borda, cantos
 arredondados, dimensões específicas, preenchimento e provavelmente
 posicionamento centralizado dentro de seu contêiner
+
+```
 .bg-footer{
  background-color: var.$bg-seco;
  bottom: 0;
  width: 100%;
 }
+
+```
+
+```
 .footer-content{
  margin: 0 auto;
  @include mx.grid-col-1-3;
  max-width: fn.toRem(1216);
+
+```
+
 • Este código cria uma seção de rodapé estilizada com um plano de fundo
 colorido posicionado na parte inferior da página.
+
+```
 .plus-card{
  gap: 10px;
  padding: 20px;
@@ -306,10 +443,14 @@ colorido posicionado na parte inferior da página.
  height: 300px;
  text-align: justify !important;
 }
+
+```
 • Este código cria um cartão com um layout flexbox em coluna, espaçamento
 entre elementos filho, preenchimento interno, borda com cor definida por uma
 variável, cantos arredondados, dimensões específicas de largura e altura, e
 texto alinhado justificadamente dentro do cartão
+
+```
 .simple-card {
  margin: 10px 0px;
  @include mx.flex;
@@ -317,15 +458,23 @@ texto alinhado justificadamente dentro do cartão
  color: var.$text-prima;
  gap: fn.toRem(24)
 }
+
+```
+
 • Este código cria um cartão simples com layout flexbox, margem vertical, fundo
 transparente, cor de texto definida por uma variável e espaçamento entre os
 elementos filho.
+
+```
 .top-nav-bg{
  background-color: var.$bg-prima;
  @include mx.shadow;
  position: fixed;
  width: 100%;
 }
+```
+
+```
 .top-nav {
  @include mx.flex-between;
  padding: 10px;
@@ -336,12 +485,18 @@ elementos filho.
  right: 0;
  z-index: 1000;
 }
+
+```
+
+```
 .ul-nav {
  cursor: pointer;
  @include mx.ul;
  @include mx.flex;
  gap: fn.toRem(24);
 }
+
+```
 • Este código cria uma barra de navegação superior fixa com fundo
 personalizado, sombra (definida pelo mixin), layout flexbox para
 posicionamento dos itens, preenchimento interno, centralizada
